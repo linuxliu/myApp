@@ -1,0 +1,24 @@
+page-recomm {
+  .recomm-head {
+    margin-top: 10px;
+    ion-slide{
+      height: 196px;
+    }
+  }
+  .recomm-center {
+    .circle{
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-color: #f53d3d;
+      position: relative;
+      left: 15px;
+      span{
+        border: 1px solid black;
+        margin-top: 100px;
+        position: relative;
+        top:15px;
+      }
+    }
+  }
+}

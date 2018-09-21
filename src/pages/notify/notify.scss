@@ -1,0 +1,32 @@
+page-notify {
+  text-align: center;
+  .notify-grid {
+    ion-col {
+      margin-top: 5px;
+    }
+  }
+  .back {
+    ion-icon {
+      font-size: 24px;
+    }
+  }
+  .notify-slides {
+    margin-top: 10px;
+    .swiper-container {
+      .swiper-slide {
+        width: 50%;
+      }
+    }
+    .bottomLine {
+      border-bottom: 0.2rem solid red;
+    }
+
+  }
+  ion-slides {
+    background-color: white;
+    .slide-zoom {
+      height: 100%;
+    }
+  }
+
+}

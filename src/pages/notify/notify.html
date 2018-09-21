@@ -1,0 +1,50 @@
+<!--
+  Generated template for the NotifyPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+  <div class="notify_head">
+    <ion-grid class="notify-grid">
+      <ion-row>
+        <ion-col (click)="onBackClick()" col-1 class="back">
+          <ion-icon name="arrow-round-back"></ion-icon>
+        </ion-col>
+        <ion-col col-8 style="font-size: 20px; padding-left: 15%">我的消息</ion-col>
+        <ion-col col-3 (click)="onMsgSend()" style="padding-top: 3%">发私信</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="notify-slides">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide bottomLine" tappable (click)="selectPageMenu(0)">
+          通知
+        </div>
+        <div class="swiper-slide" tappable (click)="selectPageMenu(1)">
+          聊天
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+
+  <ion-slides #Slides (ionSlideDidChange)="onSlideDidChange()">
+    <ion-slide>
+      <ion-list>
+        <button style="font-size: 10px" ion-item icon-start *ngFor="let item of items;" (click)="onClick(item)">
+          <ion-icon name="{{item.name}}" color="{{item.color}}">
+            {{item.title}}
+          </ion-icon>
+        </button>
+      </ion-list>
+    </ion-slide>
+    <ion-slide>
+      <h2>聊天信息</h2>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

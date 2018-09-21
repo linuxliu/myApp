@@ -1,0 +1,44 @@
+<!--
+  Generated template for the RecommPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content>
+  <div class="recomm-head">
+    <ion-slides autoplay>
+      <ion-slide *ngFor=" let img of imgs">
+        <img src="{{img}}">
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <div class="recomm-center">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3>
+          <div class="circle">
+           <span>作品</span>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="circle">
+            <span>作家</span>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="circle">
+            <span>商城</span>
+          </div>
+        </ion-col>
+        <ion-col col-3>
+          <div class="circle">
+            <span>话题</span>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div class="recomm-footer">
+  </div>
+
+</ion-content>

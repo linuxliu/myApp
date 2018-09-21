@@ -1,0 +1,40 @@
+page-main {
+  .search{
+    text-align: center;
+    width: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .notify {
+    text-align: center;
+    width: 20px;
+    font-size: 18px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .red-point:after{
+    position: absolute;
+    content: ' ';
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    background-color: red;
+    top:0;
+    right: 0;
+  }
+
+  .swiper-container{
+    //width: 50%;
+    //height: 64px;
+    .swiper-slide{
+      width: 50%;
+    }
+  }
+  .bottomLine{
+    border-bottom: 0.2rem solid red;
+  }
+
+}
