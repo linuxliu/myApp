@@ -1,0 +1,41 @@
+<!--
+  Generated template for the RegCompletePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>验证验证码</ion-title>
+  </ion-navbar>
+
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-item no-lines>
+        <span>验证码将发送到手机号 {{user.tel}}, 请查收</span>
+      </ion-item>
+
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>请输入短信验证码</ion-label>
+        <ion-input type="number" [(ngModel)]="verifyCode.code" (ionChange)="onChange()" (ionBlur)="onBlue()"></ion-input>
+        <button [disabled]="verifyCode.disable" ion-button item-end outline (click)="onClick(0)">{{verifyCode.tips}}</button>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item no-lines>
+        <button [disabled]="Status2" ion-button block (click)="onClick(1)">注册</button>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

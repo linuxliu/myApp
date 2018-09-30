@@ -1,0 +1,44 @@
+<!--
+  Generated template for the ForgotPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>忘记密码</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>请输入手机号</ion-label>
+        <ion-input type="number" [(ngModel)]="user.tel" (ionChange)="onChange(0)" (ionBlur)="onBlur(0)"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>请输入新密码(6-20位)</ion-label>
+        <ion-input type="{{user.passwd_type}}" [(ngModel)]="user.passwd" (ionChange)="onChange(1)"
+                   (ionBlur)="onBlur(1)"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>请输入短信验证码</ion-label>
+        <ion-input type="number" [(ngModel)]="verifyCode.code" (ionChange)="onChange(2)"
+                   (ionBlur)="onBlur(2)"></ion-input>
+        <button [disabled]="verifyCode.disable" ion-button round item-end (click)="onClick(0)">{{verifyCode.tips}}</button>
+      </ion-item>
+
+    </ion-row>
+    <ion-row>
+      <button [disabled]="modifyStatus" ion-button block color="dark" (click)="onClick(1)">修改</button>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

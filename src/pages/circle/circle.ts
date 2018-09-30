@@ -22,4 +22,8 @@ export class CirclePage {
     console.log('ionViewDidLoad CirclePage');
   }
 
+  onClick(){
+    this.navCtrl.push('RegisterPage');
+  }
+
 }

@@ -1,0 +1,36 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>注册账号</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>手机号(仅支持中国大陆号码)</ion-label>
+        <ion-input type="number" [(ngModel)]="user.tel" (ionBlur)="onBlur(0)" (ionChange)="onChange(0)"></ion-input>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-label floating>请设置密码(6-20位)</ion-label>
+        <ion-input type="{{type}}" [(ngModel)]="user.passwd" (ionBlur)="onBlur(1)" (ionChange)="onChange(1)"></ion-input>
+        <ion-icon item-end name="{{eye}}" (click)="onClick(0)" style="margin-bottom: 0"></ion-icon>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <button [disabled]="Status" ion-button block  (click)="onClick(1)">下一步</button>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

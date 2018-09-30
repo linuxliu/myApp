@@ -1,0 +1,50 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+</ion-header>
+
+
+<ion-content>
+  <img src="assets/imgs/logo.png" class="wel_logo">
+  <ion-grid>
+    <ion-row>
+      <button ion-button color="dark" block (click)="onClick(0)">手机号注册</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button color="dark" block outline (click)="onClick(1)">登录</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button clear icon-end class="row_center" (click)="onClick(2)">
+        我先看看
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-row>
+  </ion-grid>
+  <div class="blank_1"></div>
+  <ion-grid class="body">
+    <ion-row>
+      <ion-col>
+        <button ion-button clear icon-start (click)="onClick(3)">
+          <ion-icon name="heart"></ion-icon>
+          QQ登录
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button clear icon-start (click)="onClick(4)">
+          <ion-icon name="heart"></ion-icon>
+          微信登录
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <span class="row_center">注册即代表您同意<a href="#">用户协议</a>和<a href="#">隐私声明</a></span>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
