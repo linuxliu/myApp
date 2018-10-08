@@ -25,6 +25,7 @@
         <ion-label floating>请输入新密码(6-20位)</ion-label>
         <ion-input type="{{user.passwd_type}}" [(ngModel)]="user.passwd" (ionChange)="onChange(1)"
                    (ionBlur)="onBlur(1)"></ion-input>
+        <ion-icon item-end name="{{user.pwd_name}}" (click)="onClick(2)"></ion-icon>
       </ion-item>
     </ion-row>
     <ion-row>
